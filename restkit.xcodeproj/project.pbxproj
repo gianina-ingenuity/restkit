@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B2277BC1E31404900E0F20F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2277BB1E31404900E0F20F /* main.m */; };
+		1B2277BF1E31404900E0F20F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2277BE1E31404900E0F20F /* AppDelegate.m */; };
+		1B2277C21E31404900E0F20F /* restkit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B2277C01E31404900E0F20F /* restkit.xcdatamodeld */; };
+		1B2277C51E31404900E0F20F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2277C41E31404900E0F20F /* MasterViewController.m */; };
+		1B2277C81E31404900E0F20F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2277C71E31404900E0F20F /* DetailViewController.m */; };
+		1B2277CB1E31404900E0F20F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2277C91E31404900E0F20F /* Main.storyboard */; };
+		1B2277CD1E31404900E0F20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B2277CC1E31404900E0F20F /* Assets.xcassets */; };
+		1B2277D01E31404900E0F20F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2277CE1E31404900E0F20F /* LaunchScreen.storyboard */; };
+		1B2277DB1E31404A00E0F20F /* restkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2277DA1E31404A00E0F20F /* restkitTests.m */; };
+		1B2277E61E31404B00E0F20F /* restkitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2277E51E31404B00E0F20F /* restkitUITests.m */; };
+		1B2277F51E314C3700E0F20F /* Jokes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2277F41E314C3700E0F20F /* Jokes.m */; };
+		CD99F7FDBCBD66DD79FE38A0 /* libPods-restkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 322D275DB41F7F6A9B313332 /* libPods-restkit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B2277D71E31404A00E0F20F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B2277AF1E31404700E0F20F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B2277B61E31404800E0F20F;
+			remoteInfo = restkit;
+		};
+		1B2277E21E31404B00E0F20F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B2277AF1E31404700E0F20F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B2277B61E31404800E0F20F;
+			remoteInfo = restkit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B2277B71E31404800E0F20F /* restkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = restkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2277BB1E31404900E0F20F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B2277BD1E31404900E0F20F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1B2277BE1E31404900E0F20F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1B2277C11E31404900E0F20F /* restkit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = restkit.xcdatamodel; sourceTree = "<group>"; };
+		1B2277C31E31404900E0F20F /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		1B2277C41E31404900E0F20F /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		1B2277C61E31404900E0F20F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1B2277C71E31404900E0F20F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1B2277CA1E31404900E0F20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B2277CC1E31404900E0F20F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B2277CF1E31404900E0F20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B2277D11E31404900E0F20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B2277D61E31404A00E0F20F /* restkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = restkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2277DA1E31404A00E0F20F /* restkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = restkitTests.m; sourceTree = "<group>"; };
+		1B2277DC1E31404B00E0F20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B2277E11E31404B00E0F20F /* restkitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = restkitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2277E51E31404B00E0F20F /* restkitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = restkitUITests.m; sourceTree = "<group>"; };
+		1B2277E71E31404B00E0F20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B2277F31E314C3700E0F20F /* Jokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jokes.h; sourceTree = "<group>"; };
+		1B2277F41E314C3700E0F20F /* Jokes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jokes.m; sourceTree = "<group>"; };
+		322D275DB41F7F6A9B313332 /* libPods-restkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-restkit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C58508E96FFD47A0A6BF65 /* Pods-restkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restkit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-restkit/Pods-restkit.debug.xcconfig"; sourceTree = "<group>"; };
+		5642B73121F0EE68DA87A800 /* Pods-restkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restkit.release.xcconfig"; path = "Pods/Target Support Files/Pods-restkit/Pods-restkit.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B2277B41E31404800E0F20F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD99F7FDBCBD66DD79FE38A0 /* libPods-restkit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2277D31E31404A00E0F20F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2277DE1E31404B00E0F20F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B2277AE1E31404700E0F20F = {
+			isa = PBXGroup;
+			children = (
+				1B2277F31E314C3700E0F20F /* Jokes.h */,
+				1B2277F41E314C3700E0F20F /* Jokes.m */,
+				1B2277B91E31404900E0F20F /* restkit */,
+				1B2277D91E31404A00E0F20F /* restkitTests */,
+				1B2277E41E31404B00E0F20F /* restkitUITests */,
+				1B2277B81E31404800E0F20F /* Products */,
+				3B977BE6493466901F59BA2E /* Pods */,
+				1B544D2867C9B8AF1845A761 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1B2277B81E31404800E0F20F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B2277B71E31404800E0F20F /* restkit.app */,
+				1B2277D61E31404A00E0F20F /* restkitTests.xctest */,
+				1B2277E11E31404B00E0F20F /* restkitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B2277B91E31404900E0F20F /* restkit */ = {
+			isa = PBXGroup;
+			children = (
+				1B2277BD1E31404900E0F20F /* AppDelegate.h */,
+				1B2277BE1E31404900E0F20F /* AppDelegate.m */,
+				1B2277C31E31404900E0F20F /* MasterViewController.h */,
+				1B2277C41E31404900E0F20F /* MasterViewController.m */,
+				1B2277C61E31404900E0F20F /* DetailViewController.h */,
+				1B2277C71E31404900E0F20F /* DetailViewController.m */,
+				1B2277C91E31404900E0F20F /* Main.storyboard */,
+				1B2277CC1E31404900E0F20F /* Assets.xcassets */,
+				1B2277CE1E31404900E0F20F /* LaunchScreen.storyboard */,
+				1B2277D11E31404900E0F20F /* Info.plist */,
+				1B2277C01E31404900E0F20F /* restkit.xcdatamodeld */,
+				1B2277BA1E31404900E0F20F /* Supporting Files */,
+			);
+			path = restkit;
+			sourceTree = "<group>";
+		};
+		1B2277BA1E31404900E0F20F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B2277BB1E31404900E0F20F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B2277D91E31404A00E0F20F /* restkitTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B2277DA1E31404A00E0F20F /* restkitTests.m */,
+				1B2277DC1E31404B00E0F20F /* Info.plist */,
+			);
+			path = restkitTests;
+			sourceTree = "<group>";
+		};
+		1B2277E41E31404B00E0F20F /* restkitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B2277E51E31404B00E0F20F /* restkitUITests.m */,
+				1B2277E71E31404B00E0F20F /* Info.plist */,
+			);
+			path = restkitUITests;
+			sourceTree = "<group>";
+		};
+		1B544D2867C9B8AF1845A761 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				322D275DB41F7F6A9B313332 /* libPods-restkit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B977BE6493466901F59BA2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49C58508E96FFD47A0A6BF65 /* Pods-restkit.debug.xcconfig */,
+				5642B73121F0EE68DA87A800 /* Pods-restkit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B2277B61E31404800E0F20F /* restkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B2277EA1E31404B00E0F20F /* Build configuration list for PBXNativeTarget "restkit" */;
+			buildPhases = (
+				AC51E3BC51E6DAB913E9C789 /* [CP] Check Pods Manifest.lock */,
+				1B2277B31E31404800E0F20F /* Sources */,
+				1B2277B41E31404800E0F20F /* Frameworks */,
+				1B2277B51E31404800E0F20F /* Resources */,
+				F4EF576D8C1330D3E87E8AF0 /* [CP] Embed Pods Frameworks */,
+				AC6C2B0DED2FC0495E8B84AB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = restkit;
+			productName = restkit;
+			productReference = 1B2277B71E31404800E0F20F /* restkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B2277D51E31404A00E0F20F /* restkitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B2277ED1E31404B00E0F20F /* Build configuration list for PBXNativeTarget "restkitTests" */;
+			buildPhases = (
+				1B2277D21E31404A00E0F20F /* Sources */,
+				1B2277D31E31404A00E0F20F /* Frameworks */,
+				1B2277D41E31404A00E0F20F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B2277D81E31404A00E0F20F /* PBXTargetDependency */,
+			);
+			name = restkitTests;
+			productName = restkitTests;
+			productReference = 1B2277D61E31404A00E0F20F /* restkitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1B2277E01E31404B00E0F20F /* restkitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B2277F01E31404B00E0F20F /* Build configuration list for PBXNativeTarget "restkitUITests" */;
+			buildPhases = (
+				1B2277DD1E31404B00E0F20F /* Sources */,
+				1B2277DE1E31404B00E0F20F /* Frameworks */,
+				1B2277DF1E31404B00E0F20F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B2277E31E31404B00E0F20F /* PBXTargetDependency */,
+			);
+			name = restkitUITests;
+			productName = restkitUITests;
+			productReference = 1B2277E11E31404B00E0F20F /* restkitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B2277AF1E31404700E0F20F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = gee;
+				TargetAttributes = {
+					1B2277B61E31404800E0F20F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = P8TMM8D57Q;
+						ProvisioningStyle = Automatic;
+					};
+					1B2277D51E31404A00E0F20F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = P8TMM8D57Q;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1B2277B61E31404800E0F20F;
+					};
+					1B2277E01E31404B00E0F20F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = P8TMM8D57Q;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1B2277B61E31404800E0F20F;
+					};
+				};
+			};
+			buildConfigurationList = 1B2277B21E31404700E0F20F /* Build configuration list for PBXProject "restkit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B2277AE1E31404700E0F20F;
+			productRefGroup = 1B2277B81E31404800E0F20F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B2277B61E31404800E0F20F /* restkit */,
+				1B2277D51E31404A00E0F20F /* restkitTests */,
+				1B2277E01E31404B00E0F20F /* restkitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B2277B51E31404800E0F20F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2277D01E31404900E0F20F /* LaunchScreen.storyboard in Resources */,
+				1B2277CD1E31404900E0F20F /* Assets.xcassets in Resources */,
+				1B2277CB1E31404900E0F20F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2277D41E31404A00E0F20F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2277DF1E31404B00E0F20F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC51E3BC51E6DAB913E9C789 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC6C2B0DED2FC0495E8B84AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-restkit/Pods-restkit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4EF576D8C1330D3E87E8AF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-restkit/Pods-restkit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B2277B31E31404800E0F20F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2277F51E314C3700E0F20F /* Jokes.m in Sources */,
+				1B2277C81E31404900E0F20F /* DetailViewController.m in Sources */,
+				1B2277C51E31404900E0F20F /* MasterViewController.m in Sources */,
+				1B2277C21E31404900E0F20F /* restkit.xcdatamodeld in Sources */,
+				1B2277BF1E31404900E0F20F /* AppDelegate.m in Sources */,
+				1B2277BC1E31404900E0F20F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2277D21E31404A00E0F20F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2277DB1E31404A00E0F20F /* restkitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2277DD1E31404B00E0F20F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2277E61E31404B00E0F20F /* restkitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B2277D81E31404A00E0F20F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B2277B61E31404800E0F20F /* restkit */;
+			targetProxy = 1B2277D71E31404A00E0F20F /* PBXContainerItemProxy */;
+		};
+		1B2277E31E31404B00E0F20F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B2277B61E31404800E0F20F /* restkit */;
+			targetProxy = 1B2277E21E31404B00E0F20F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B2277C91E31404900E0F20F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B2277CA1E31404900E0F20F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B2277CE1E31404900E0F20F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B2277CF1E31404900E0F20F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B2277E81E31404B00E0F20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B2277E91E31404B00E0F20F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B2277EB1E31404B00E0F20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49C58508E96FFD47A0A6BF65 /* Pods-restkit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P8TMM8D57Q;
+				INFOPLIST_FILE = restkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gee.restkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B2277EC1E31404B00E0F20F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5642B73121F0EE68DA87A800 /* Pods-restkit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P8TMM8D57Q;
+				INFOPLIST_FILE = restkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gee.restkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1B2277EE1E31404B00E0F20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P8TMM8D57Q;
+				INFOPLIST_FILE = restkitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gee.restkitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/restkit.app/restkit";
+			};
+			name = Debug;
+		};
+		1B2277EF1E31404B00E0F20F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P8TMM8D57Q;
+				INFOPLIST_FILE = restkitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gee.restkitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/restkit.app/restkit";
+			};
+			name = Release;
+		};
+		1B2277F11E31404B00E0F20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = P8TMM8D57Q;
+				INFOPLIST_FILE = restkitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gee.restkitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = restkit;
+			};
+			name = Debug;
+		};
+		1B2277F21E31404B00E0F20F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = P8TMM8D57Q;
+				INFOPLIST_FILE = restkitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gee.restkitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = restkit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B2277B21E31404700E0F20F /* Build configuration list for PBXProject "restkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2277E81E31404B00E0F20F /* Debug */,
+				1B2277E91E31404B00E0F20F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B2277EA1E31404B00E0F20F /* Build configuration list for PBXNativeTarget "restkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2277EB1E31404B00E0F20F /* Debug */,
+				1B2277EC1E31404B00E0F20F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B2277ED1E31404B00E0F20F /* Build configuration list for PBXNativeTarget "restkitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2277EE1E31404B00E0F20F /* Debug */,
+				1B2277EF1E31404B00E0F20F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B2277F01E31404B00E0F20F /* Build configuration list for PBXNativeTarget "restkitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2277F11E31404B00E0F20F /* Debug */,
+				1B2277F21E31404B00E0F20F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B2277C01E31404900E0F20F /* restkit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B2277C11E31404900E0F20F /* restkit.xcdatamodel */,
+			);
+			currentVersion = 1B2277C11E31404900E0F20F /* restkit.xcdatamodel */;
+			path = restkit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1B2277AF1E31404700E0F20F /* Project object */;
+}
